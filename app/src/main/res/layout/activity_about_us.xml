@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AboutUsActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/tool_bar" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimension16dp"
+                android:layout_marginBottom="@dimen/dimension20dp"
+                android:text="Our Admission is in two stages"
+                android:textColor="@color/pale_blue"
+                android:textSize="@dimen/dimens_16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension130dp"
+                android:layout_marginStart="@dimen/dimension16dp"
+                android:layout_marginEnd="@dimen/dimension16dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/dimension35dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#42A4FF"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="@dimen/dimens_10"
+                    app:cardPreventCornerOverlap="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimension20dp"
+                            android:gravity="center"
+                            android:text="@string/stage_one_n_the_first_stage_is_n_through_n_a_competitive_entrance"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimension14sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_stage_one"
+                            android:layout_width="@dimen/dimension30dp"
+                            android:layout_height="@dimen/dimension30dp"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="@dimen/dimens_10"
+                            android:src="@drawable/white_long_arrow" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#426BFF"
+                    app:cardCornerRadius="7dp"
+                    app:cardElevation="@dimen/dimens_10"
+                    app:cardPreventCornerOverlap="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimension15dp"
+                            android:gravity="center"
+                            android:text="STAGE TWO \n Oral Interview: At this \n stage, the confidence \n level of the child \n is"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/dimension14sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_stage_two"
+                            android:layout_width="@dimen/dimension30dp"
+                            android:layout_height="@dimen/dimension30dp"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="@dimen/dimens_10"
+                            android:src="@drawable/white_long_arrow" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimension200dp"
+                android:layout_marginStart="@dimen/dimension16dp"
+                android:layout_marginTop="@dimen/dimension50dp"
+                android:layout_marginEnd="@dimen/dimension16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/dimension200dp"
+                        android:layout_height="@dimen/dimension200dp"
+                        android:src="@drawable/ellipse" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimens_10"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="sans-serif-black"
+                        android:gravity="center"
+                        android:text="Lipgraceandpeace\n be unteo everyon\nthrough Christ "
+                        android:textColor="@color/greyed_blue"
+                        android:textSize="@dimen/dimens_16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginTop="@dimen/dimension40dp"
+                android:background="#304E7C"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/our_vision"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimens_16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="To be an international centre\n of excellence in learning, \n educational research and \n service to humanity"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimension12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="OUR MISION"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimens_16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="To provide a dynamic and \n functional education to students \n with the main aim of solving \n everyday problems."
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimension12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/dimesnsion300dp"
+                android:layout_height="@dimen/dimension70dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimension25dp"
+                android:background="@drawable/light_blue_rounded_corner_btn"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_learn_about_us"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_learn_about_us"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/dimens_10"
+                        android:text="LEARN ABOUT US"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/dimens_20sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/group_access_arrow" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/dimension15dp"
+                android:layout_marginRight="@dimen/dimens_10"
+                android:layout_marginBottom="@dimen/dimension14dp"
+                android:gravity="center_horizontal"
+                android:text="Copyright 2023 | All Rights Reserved"
+                android:textColor="@color/light_brown"
+                android:textSize="@dimen/dimension14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:background="@drawable/ash_bottom_color_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/line" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

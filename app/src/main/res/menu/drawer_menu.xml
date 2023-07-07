@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Dashboard" />
+
+        <item
+            android:id="@+id/nav_announcement"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Announcement" />
+
+        <item
+            android:id="@+id/nav_retreat"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Retreat" />
+
+        <item
+            android:id="@+id/nav_admission"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Admission" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Contact" />
+
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Support" />
+
+    </group>
+
+    <item android:title="">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_Logout"
+                android:icon="@drawable/nav_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

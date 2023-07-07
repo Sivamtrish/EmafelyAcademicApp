@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmafelyLandingPageActivity">
+
+    <include layout="@layout/tool_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dimens_50"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dimens_100"
+            android:background="@color/deep_gray"
+            android:orientation="vertical">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_blue"
+            android:layout_width="@dimen/dimens_250"
+            android:layout_height="@dimen/dimens_150"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/blue_rectangle">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_gray"
+            android:layout_width="@dimen/dimens_250"
+            android:layout_height="@dimen/dimens_400"
+            android:layout_below="@+id/layout_blue"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/blue_rectangle"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_welcome_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/welcome_to"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimens_20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_welcome_to"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dimens_10"
+        android:gravity="center_horizontal"
+        android:text="Emafely Divine\nTreasure School"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dimens_20sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/get_started_btn"
+        android:layout_width="@dimen/dimens_300"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimens_50"
+        android:background="@drawable/white_rounded_corner_btn"
+        android:text="@string/get_started"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

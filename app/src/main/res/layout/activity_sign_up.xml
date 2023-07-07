@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#45608C"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/dimension16dp"
+            android:paddingEnd="@dimen/dimension16dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension50dp"
+                android:gravity="center"
+                android:text="Emafely Divine \n Treasure School"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimension_22" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension50dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="@string/parent_guardian_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <EditText
+                    android:id="@+id/et_parent_guardian_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background"
+                    android:paddingLeft="@dimen/dimension16dp"
+                    android:inputType="text"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="@string/username"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <EditText
+                    android:id="@+id/et_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background"
+                    android:paddingLeft="@dimen/dimension16dp"
+                    android:textColor="@color/white"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="@string/email_address"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <EditText
+                    android:id="@+id/et_email_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background"
+                    android:paddingLeft="@dimen/dimension16dp"
+                    android:textColor="@color/white"
+                    android:inputType="textEmailAddress"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="@string/name_of_child"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <EditText
+                    android:id="@+id/et_name_of_child"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background"
+                    android:paddingLeft="@dimen/dimension16dp"
+                    android:textColor="@color/white"
+                    android:inputType="text"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="@string/sex"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/sp_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimension50dp"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:backgroundTint="@color/white" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="D.O.B"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <EditText
+                    android:id="@+id/et_dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background"
+                    android:drawableRight="@drawable/dob"
+                    android:paddingHorizontal="@dimen/dimension16dp"
+                    android:paddingLeft="@dimen/dimension16dp"
+                    android:textColor="@color/white"
+                    android:inputType="date"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="Home Phone"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <EditText
+                    android:id="@+id/et_home_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background"
+                    android:paddingLeft="@dimen/dimension16dp"
+                    android:textColor="@color/white"
+                    android:inputType="phone"
+                    android:maxLength="11"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="Home Address"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <EditText
+                    android:id="@+id/et_home_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background"
+                    android:paddingLeft="@dimen/dimension16dp"
+                    android:textColor="@color/white"
+                    android:inputType=""/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="State of Origin"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/sp_state_of_origin"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimension50dp"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:backgroundTint="@color/white"/>
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="City of Residence"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <EditText
+                    android:id="@+id/et_city_of_residence"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background"
+                    android:paddingLeft="@dimen/dimension16dp"
+                    android:textColor="@color/white"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="Relationship to Child"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background">
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/sp_relationship_to_child"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimension50dp"
+                        android:gravity="center"
+                        android:spinnerMode="dropdown"
+                        android:backgroundTint="@color/white"/>
+                </FrameLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="Password"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background"
+                    android:paddingLeft="@dimen/dimension16dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="Confirm Password"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+
+                <EditText
+                    android:id="@+id/et_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimension50dp"
+                    android:background="@drawable/white_rounded_corner_btn2_blue_background"
+                    android:paddingLeft="@dimen/dimension16dp"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension20dp"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_terms_conditions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="@dimen/dimension_5dp"
+                    android:text="I agree to our terms and conditions"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimens_16sp" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimension_30dp"
+                android:layout_marginBottom="@dimen/dimension50dp"
+                android:background="@drawable/white_rounded_corner_btn"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
